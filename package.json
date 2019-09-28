@@ -1,12 +1,30 @@
 {
   "name": "ionic-webpack",
   "version": "0.0.1",
-  "description": "An Ionic project",
+  "description": "Ionic with webpack",
+  "private": true,
+  "scripts": {
+    "build": "webpack  --mode=development",
+    "ionic-serve": "ionic serve",
+    "ionic-start": "npm run build && npm run ionic-serve"
+  },
   "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "@ionic/v1-toolkit": "^1.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
     "gulp": "^3.5.6",
     "gulp-clean-css": "^3.7.0",
     "gulp-rename": "^1.2.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "html-loader": "^0.5.5",
+    "node-sass": "^4.12.0",
+    "raw-loader": "^3.1.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }
