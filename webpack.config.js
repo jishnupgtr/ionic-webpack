@@ -2,8 +2,8 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    app: "./www/js/app.js",
-    components: "./www/js/components.js"
+    app: "./www/js/app.module.js",
+    components: "./www/js/components.module.js"
   },
   output: {
     filename: "[name].bundle.js",
