@@ -27,11 +27,11 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        exclude: /node_modules/,
         use: ["babel-loader"]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        exclude: /node_modules/,
         use: ["file-loader"]
       },
       {
